@@ -1,31 +1,37 @@
-@import-normalize; /* bring in normalize.css styles */
-
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    margin-top: 0;
-    margin-bottom: 0;
+h6,
+p {
+  margin: 0;
 }
 
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding: 20px;
+  overflow: hidden;
+  margin: 0px auto;
 }
 
 body {
     margin: 0;
-    min-width: 100%;
+    max-width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.17;
@@ -33,14 +39,6 @@ body {
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0px auto;
-    overflow: hidden
 }
 
 
