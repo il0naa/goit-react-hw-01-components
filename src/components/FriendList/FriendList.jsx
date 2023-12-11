@@ -8,12 +8,12 @@ const FriendListItem = ({ avatar, name, isOnline }) => (
     </li>
   );
   
-  const FriendList = ({ friends }) => (
+const FriendList = ({ friends }) => (
     <ul className={`${css.friendList}`}>
       {friends.map(({ id, ...friend }) => (
         <FriendListItem key={id} {...friend} />
       ))}
     </ul>
-  );
+);
   
   export default FriendList;
