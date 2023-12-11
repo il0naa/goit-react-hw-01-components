@@ -10,13 +10,7 @@ import transactions from "../data/transactions.json";
 export const App = () => {
   return (
     <div className="container">
-      <Profile
-          avatar={user.avatar}
-          tag={user.tag}
-          username={user.username}
-          location={user.location}
-          stats={user.stats}
-      />
+      <Profile {...user} />
       <Statistics
         stats={data}
         title="Upload stats"
