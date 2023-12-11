@@ -16,4 +16,4 @@ const FriendList = ({ friends }) => (
     </ul>
 );
   
-  export default FriendList;
+export default FriendList;
